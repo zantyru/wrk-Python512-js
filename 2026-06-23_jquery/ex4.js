@@ -6,7 +6,7 @@ $(() => {
     .text("Заглушка")
     .css("border", "2px solid black")
     .css("margin", "4px")
-    .on("click", function() {
+    .on("click", function() {  // Стрелочная функция `() => ...` тут не сработает из-за её отношения к this
         $(this)
         .css("border-color", "red")
         .css("background", "bisque");
